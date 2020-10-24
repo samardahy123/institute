@@ -1,0 +1,63 @@
+ALTER proc [dbo].[get_sub_abs_deg]
+@dept_id int 
+,@lev_id int
+,@sem_id int
+,@sub_id int 
+,@stu_id int 
+as 
+select
+subject_deg
+from absance
+where 
+absance.dept_id=@dept_id
+ and absance.lev_id=@lev_id
+and absance.sem_id=@sem_id
+and absance.sub_id=@sub_id
+ and absance.stu_id=@stu_id
+
+
+
+
+ALTER proc [dbo].[get_marks]
+
+as
+SELECT [mark_id] as 'م'
+       ,[stu_name] as 'اسم الطالب'
+      ,[sub_name] as ' المواد'
+      ,[m1] as 'تحريرى'
+      ,[m2] as 'عملى واعمال سنة '
+      ,[m3] as 'معدل الحضور والغياب'
+      ,[sub_total] as 'المجموع'
+	  
+     
+      
+  FROM ((mark
+  inner join [dbo].[student] on student.stu_id = mark.stu_id)
+  inner join [dbo].[subjects] on subjects.sub_id=mark.sub_id)
+
+
+
+ALTER proc [dbo].[get_marksfor_dept_lev_sem]
+@dept_id int,
+@lev_id int,
+@sem_id int
+as
+SELECT [mark_id] as 'م'
+       ,[stu_name] as 'اسم الطالب'
+      ,[sub_name] as ' المواد'
+      ,[m1] as 'تحريرى'
+      ,[m2] as 'عملى واعمال سنة '
+      ,[m3] as 'معدل الحضور والغياب'
+      ,[sub_total] as 'المجموع'
+	  
+     
+      
+  FROM ((mark
+  inner join [dbo].[student] on student.stu_id = mark.stu_id)
+  inner join [dbo].[subjects] on subjects.sub_id=mark.sub_id)
+where
+mark.dept_id=@dept_id
+and mark.lev_id=@lev_id
+and mark.sem_id=@sem_id
+
+

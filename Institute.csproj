@@ -1,0 +1,1218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2435667-1214-4230-B104-79670EE5AED5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Institute</RootNamespace>
+    <AssemblyName>Institute</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\puplish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1DC42B913A73177AAACBFF9C9AA9D9AE87E6047D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Institute_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdvancedDataGridView, Version=0.1.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ADGV.0.1.0.10\lib\net40\AdvancedDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\CLS_absance.cs" />
+    <Compile Include="BL\CLS_Account.cs" />
+    <Compile Include="BL\CLS_class.cs" />
+    <Compile Include="BL\CLS_department.cs" />
+    <Compile Include="BL\CLS_exam.cs" />
+    <Compile Include="BL\CLS_lectures.cs" />
+    <Compile Include="BL\CLS_lev_sem.cs" />
+    <Compile Include="BL\CLS_login.cs" />
+    <Compile Include="BL\CLS_Marks.cs" />
+    <Compile Include="BL\CLS_Settings.cs" />
+    <Compile Include="BL\CLS_SqlToStringDate.cs" />
+    <Compile Include="BL\CLS_stduent.cs" />
+    <Compile Include="BL\CLS_Subject.cs" />
+    <Compile Include="BL\CLS_Testimonies.cs" />
+    <Compile Include="BL\lectures_num.cs" />
+    <Compile Include="DAL\DataAccessLayer.cs" />
+    <Compile Include="Institute_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Institute_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Absance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Absance.Designer.cs">
+      <DependentUpon>Absance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Accounts.designer.cs">
+      <DependentUpon>Accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\addFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\addFee.Designer.cs">
+      <DependentUpon>addFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\add_abasnce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\add_abasnce.Designer.cs">
+      <DependentUpon>add_abasnce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\add_class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\add_class.Designer.cs">
+      <DependentUpon>add_class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\add_exams_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\add_exams_table.Designer.cs">
+      <DependentUpon>add_exams_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\add_lectures_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\add_lectures_table.Designer.cs">
+      <DependentUpon>add_lectures_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Add_mark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Add_mark.Designer.cs">
+      <DependentUpon>Add_mark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Add_New_Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Add_New_Department.Designer.cs">
+      <DependentUpon>Add_New_Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\add_subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\add_subject.Designer.cs">
+      <DependentUpon>add_subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\add_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\add_user.Designer.cs">
+      <DependentUpon>add_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Class.Designer.cs">
+      <DependentUpon>Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\config.Designer.cs">
+      <DependentUpon>config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\DegreeCertificate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\DegreeCertificate.Designer.cs">
+      <DependentUpon>DegreeCertificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Department.Designer.cs">
+      <DependentUpon>Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Ex_Tables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Ex_Tables.Designer.cs">
+      <DependentUpon>Ex_Tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_lec_class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_lec_class.Designer.cs">
+      <DependentUpon>frm_lec_class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Graduate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Graduate.Designer.cs">
+      <DependentUpon>Graduate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\GraduateEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\GraduateEdit.Designer.cs">
+      <DependentUpon>GraduateEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\LecTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\LecTable.Designer.cs">
+      <DependentUpon>LecTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Marks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Marks.Designer.cs">
+      <DependentUpon>Marks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\RegistStd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\RegistStd.Designer.cs">
+      <DependentUpon>RegistStd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Restore.Designer.cs">
+      <DependentUpon>Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\start.Designer.cs">
+      <DependentUpon>start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Stdudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Stdudent.Designer.cs">
+      <DependentUpon>Stdudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Subject.Designer.cs">
+      <DependentUpon>Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Tesstimonies2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Tesstimonies2.Designer.cs">
+      <DependentUpon>Tesstimonies2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Testimonies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Testimonies.Designer.cs">
+      <DependentUpon>Testimonies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Testimonies1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Testimonies1.Designer.cs">
+      <DependentUpon>Testimonies1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\testimonies3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\testimonies3.Designer.cs">
+      <DependentUpon>testimonies3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Testimonies4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Testimonies4.Designer.cs">
+      <DependentUpon>Testimonies4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\testimonies5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\testimonies5.Designer.cs">
+      <DependentUpon>testimonies5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\UpdateAbs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\UpdateAbs.Designer.cs">
+      <DependentUpon>UpdateAbs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\UpdateFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\UpdateFee.Designer.cs">
+      <DependentUpon>UpdateFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\UpdatelecTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\UpdatelecTable.Designer.cs">
+      <DependentUpon>UpdatelecTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\UpdateMark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\UpdateMark.Designer.cs">
+      <DependentUpon>UpdateMark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\UpdateSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\UpdateSubject.Designer.cs">
+      <DependentUpon>UpdateSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RPT\FRM_absance_for_stu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_absance_for_stu.Designer.cs">
+      <DependentUpon>FRM_absance_for_stu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_All_mark_for_stu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_All_mark_for_stu.Designer.cs">
+      <DependentUpon>FRM_All_mark_for_stu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee4_Lev1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee4_Lev1.Designer.cs">
+      <DependentUpon>FRM_Fee4_Lev1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee4_Lev2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee4_Lev2.Designer.cs">
+      <DependentUpon>FRM_Fee4_Lev2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\frm_mark_dept_lev_stu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_mark_dept_lev_stu.Designer.cs">
+      <DependentUpon>frm_mark_dept_lev_stu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_abs_morethan20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_abs_morethan20.Designer.cs">
+      <DependentUpon>FRM_rpt_abs_morethan20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_lat_lev1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_lat_lev1.Designer.cs">
+      <DependentUpon>FRM_rpt_lat_lev1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_lat_lev2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_lat_lev2.Designer.cs">
+      <DependentUpon>FRM_rpt_lat_lev2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_type_lev1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_type_lev1.Designer.cs">
+      <DependentUpon>FRM_rpt_type_lev1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_type_lev2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_type_lev2.Designer.cs">
+      <DependentUpon>FRM_rpt_type_lev2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\frm_stu_account_lat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_stu_account_lat.Designer.cs">
+      <DependentUpon>frm_stu_account_lat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\report_allmark_for_dept_lev_stu.cs">
+      <DependentUpon>report_allmark_for_dept_lev_stu.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\report_allmark_for_stu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>report_allmark_for_stu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_absance _abs_morethan20.cs">
+      <DependentUpon>rpt_absance _abs_morethan20.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_absance_for_stu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_absance_for_stu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_all_fees_for_dept.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_all_fees_for_dept.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_all_account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_all_account.Designer.cs">
+      <DependentUpon>frm_all_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\frm_all_fees_for_dept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_all_fees_for_dept.Designer.cs">
+      <DependentUpon>frm_all_fees_for_dept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\Frm_Fee1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\Frm_Fee1.Designer.cs">
+      <DependentUpon>Frm_Fee1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee1_Lev1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee1_Lev1.Designer.cs">
+      <DependentUpon>FRM_Fee1_Lev1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee1_Lev2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee1_Lev2.Designer.cs">
+      <DependentUpon>FRM_Fee1_Lev2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\Frm_Fee2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\Frm_Fee2.Designer.cs">
+      <DependentUpon>Frm_Fee2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee2_Lev1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee2_Lev1.Designer.cs">
+      <DependentUpon>FRM_Fee2_Lev1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee2_Lev2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee2_Lev2.Designer.cs">
+      <DependentUpon>FRM_Fee2_Lev2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\Frm_Fee3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\Frm_Fee3.Designer.cs">
+      <DependentUpon>Frm_Fee3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee3_Lev1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee3_Lev1.Designer.cs">
+      <DependentUpon>FRM_Fee3_Lev1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee3_Lev2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_Fee3_Lev2.Designer.cs">
+      <DependentUpon>FRM_Fee3_Lev2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_RPT_Absance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_RPT_Absance.Designer.cs">
+      <DependentUpon>FRM_RPT_Absance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\rpt_fee4_lev2.cs">
+      <DependentUpon>rpt_fee4_lev2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_fee4_lev1.cs">
+      <DependentUpon>rpt_fee4_lev1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_lat_lev2.cs">
+      <DependentUpon>rpt_lat_lev2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_lec_class.cs">
+      <DependentUpon>rpt_lec_class.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\lecture_table.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lecture_table.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_absance.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_absance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_exams_table.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_exams_table.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_fee4.cs">
+      <DependentUpon>rpt_fee4.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_fee3.cs">
+      <DependentUpon>rpt_fee3.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_fee2.cs">
+      <DependentUpon>rpt_fee2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_fee1.cs">
+      <DependentUpon>rpt_fee1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_fee3_lev2 .cs">
+      <DependentUpon>rpt_fee3_lev2 .rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_fee3_lev1 .cs">
+      <DependentUpon>rpt_fee3_lev1 .rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_fee2_lev2.cs">
+      <DependentUpon>rpt_fee2_lev2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_fee2_lev1.cs">
+      <DependentUpon>rpt_fee2_lev1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_fee1_lev1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_fee1_lev1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_fee1_lev2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_fee1_lev2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_get_account.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_get_account.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_get_marks1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_get_marks.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_stu_lat_account_fees.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_stu_lat_account_fees.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_testimonies3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_testimonies3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_testimonies4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_testimonies4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_testimonies5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_testimonies5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_testimoniesF2.cs">
+      <DependentUpon>rpt_testimoniesF2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_testimoniesF1 .cs">
+      <DependentUpon>rpt_testimoniesF1 .rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RPT\rpt_testimoniesM2.cs">
+      <DependentUpon>rpt_testimoniesM2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_testimoniesM11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_testimoniesM1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_lat_lev1.cs">
+      <DependentUpon>rpt_lat_lev1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_type_lev2.cs">
+      <DependentUpon>rpt_type_lev2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_type_lev1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_type_lev1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="PL\Absance.resx">
+      <DependentUpon>Absance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Accounts.resx">
+      <DependentUpon>Accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\addFee.resx">
+      <DependentUpon>addFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\add_abasnce.resx">
+      <DependentUpon>add_abasnce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\add_class.resx">
+      <DependentUpon>add_class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\add_exams_table.resx">
+      <DependentUpon>add_exams_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\add_lectures_table.resx">
+      <DependentUpon>add_lectures_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Add_mark.resx">
+      <DependentUpon>Add_mark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Add_New_Department.resx">
+      <DependentUpon>Add_New_Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\add_subject.resx">
+      <DependentUpon>add_subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\add_user.resx">
+      <DependentUpon>add_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Class.resx">
+      <DependentUpon>Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\config.resx">
+      <DependentUpon>config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\DegreeCertificate.resx">
+      <DependentUpon>DegreeCertificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Department.resx">
+      <DependentUpon>Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Ex_Tables.resx">
+      <DependentUpon>Ex_Tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_lec_class.resx">
+      <DependentUpon>frm_lec_class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Graduate.resx">
+      <DependentUpon>Graduate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\GraduateEdit.resx">
+      <DependentUpon>GraduateEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\LecTable.resx">
+      <DependentUpon>LecTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Marks.resx">
+      <DependentUpon>Marks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\RegistStd.resx">
+      <DependentUpon>RegistStd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Restore.resx">
+      <DependentUpon>Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\start.resx">
+      <DependentUpon>start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Stdudent.resx">
+      <DependentUpon>Stdudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Subject.resx">
+      <DependentUpon>Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Tesstimonies2.resx">
+      <DependentUpon>Tesstimonies2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Testimonies.resx">
+      <DependentUpon>Testimonies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Testimonies1.resx">
+      <DependentUpon>Testimonies1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\testimonies3.resx">
+      <DependentUpon>testimonies3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Testimonies4.resx">
+      <DependentUpon>Testimonies4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\testimonies5.resx">
+      <DependentUpon>testimonies5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\UpdateAbs.resx">
+      <DependentUpon>UpdateAbs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\UpdateFee.resx">
+      <DependentUpon>UpdateFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\UpdatelecTable.resx">
+      <DependentUpon>UpdatelecTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\UpdateMark.resx">
+      <DependentUpon>UpdateMark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\UpdateSubject.resx">
+      <DependentUpon>UpdateSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RPT\FRM_absance_for_stu.resx">
+      <DependentUpon>FRM_absance_for_stu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_all_fees_for_dept.resx">
+      <DependentUpon>frm_all_fees_for_dept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_All_mark_for_stu.resx">
+      <DependentUpon>FRM_All_mark_for_stu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_Fee4_Lev1.resx">
+      <DependentUpon>FRM_Fee4_Lev1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_Fee4_Lev2.resx">
+      <DependentUpon>FRM_Fee4_Lev2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_mark_dept_lev_stu.resx">
+      <DependentUpon>frm_mark_dept_lev_stu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_rpt_abs_morethan20.resx">
+      <DependentUpon>FRM_rpt_abs_morethan20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_rpt_lat_lev1.resx">
+      <DependentUpon>FRM_rpt_lat_lev1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_rpt_lat_lev2.resx">
+      <DependentUpon>FRM_rpt_lat_lev2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_rpt_type_lev1.resx">
+      <DependentUpon>FRM_rpt_type_lev1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_rpt_type_lev2.resx">
+      <DependentUpon>FRM_rpt_type_lev2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_stu_account_lat.resx">
+      <DependentUpon>frm_stu_account_lat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\report_allmark_for_dept_lev_stu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>report_allmark_for_dept_lev_stu.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\report_allmark_for_stu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>report_allmark_for_stu.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_absance _abs_morethan20.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_absance _abs_morethan20.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_absance_for_stu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_absance_for_stu.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_all_fees_for_dept.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_all_fees_for_dept.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_all_account.resx">
+      <DependentUpon>frm_all_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\Frm_Fee1.resx">
+      <DependentUpon>Frm_Fee1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_Fee1_Lev1.resx">
+      <DependentUpon>FRM_Fee1_Lev1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_Fee1_Lev2.resx">
+      <DependentUpon>FRM_Fee1_Lev2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\Frm_Fee2.resx">
+      <DependentUpon>Frm_Fee2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_Fee2_Lev1.resx">
+      <DependentUpon>FRM_Fee2_Lev1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_Fee2_Lev2.resx">
+      <DependentUpon>FRM_Fee2_Lev2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\Frm_Fee3.resx">
+      <DependentUpon>Frm_Fee3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_Fee3_Lev1.resx">
+      <DependentUpon>FRM_Fee3_Lev1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_Fee3_Lev2.resx">
+      <DependentUpon>FRM_Fee3_Lev2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_RPT_Absance.resx">
+      <DependentUpon>FRM_RPT_Absance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_fee4_lev2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_fee4_lev2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_fee4_lev1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_fee4_lev1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_lat_lev2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_lat_lev2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_lec_class.resx">
+      <DependentUpon>rpt_lec_class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_lec_class.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_lec_class.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\lecture_table.resx">
+      <DependentUpon>lecture_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\lecture_table.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>lecture_table.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_absance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_absance.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_exams_table.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_exams_table.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_fee4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_fee4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_fee3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_fee3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_fee2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_fee2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_fee1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_fee1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_fee3_lev2 .rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_fee3_lev2 .cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_fee3_lev1 .rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_fee3_lev1 .cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_fee2_lev2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_fee2_lev2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_fee2_lev1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_fee2_lev1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_fee1_lev1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_fee1_lev1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_fee1_lev2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_fee1_lev2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_get_account.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_get_account.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_get_marks.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_get_marks1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_stu_lat_account_fees.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_stu_lat_account_fees.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_testimonies3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_testimonies3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_testimonies4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_testimonies4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_testimonies5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_testimonies5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_testimoniesF2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_testimoniesF2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_testimoniesF1 .rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_testimoniesF1 .cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_testimoniesM2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_testimoniesM2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_testimoniesM1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_testimoniesM11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_lat_lev1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_lat_lev1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_type_lev2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_type_lev2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_type_lev1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_type_lev1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Institute_DBDataSet.xsc">
+      <DependentUpon>Institute_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Institute_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Institute_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Institute_DBDataSet.xss">
+      <DependentUpon>Institute_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Institute_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\department.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\ibudget.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\icons8-index-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\sign-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\student-registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\attendance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\test-passed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\financial-tasks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\lecture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\business-report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assests\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assests\addEdit.png" />
+    <Content Include="Assests\certificate.png" />
+    <Content Include="Assests\contract.png" />
+    <Content Include="Assests\diploma.png" />
+    <Content Include="Assests\icons8-accounting-30.png" />
+    <Content Include="Assests\icons8-accounting-50.png" />
+    <Content Include="Assests\icons8-silver-medal-40.png" />
+    <Content Include="Assests\icons8-training-100.png" />
+    <Content Include="Assests\icons8-training-96.png" />
+    <Content Include="Assests\Std.png" />
+    <Content Include="Assests\stdd.png" />
+    <Content Include="Assests\training.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
